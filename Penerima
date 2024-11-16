@@ -1,0 +1,31 @@
+package com.mycompany.mavenproject2;
+
+public class Penerima {
+    private String namaPenerima;
+    private double jumlahZakatDiterima;
+
+    // Constructor with parameters
+    public Penerima(String namaPenerima) {
+        this.namaPenerima = namaPenerima;
+        this.jumlahZakatDiterima = 0;
+    }
+
+    // Getter and Setter for namaPenerima
+    public String getNamaPenerima() {
+        return namaPenerima;
+    }
+
+    public void setNamaPenerima(String namaPenerima) {
+        this.namaPenerima = namaPenerima;
+    }
+
+    // Getter for jumlahZakatDiterima
+    public double getJumlahZakatDiterima() {
+        return jumlahZakatDiterima;
+    }
+
+    // Method to accept zakat
+    public void terimaZakat(double jumlah) {
+        this.jumlahZakatDiterima += jumlah;
+    }
+}
