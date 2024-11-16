@@ -1,0 +1,43 @@
+package com.mycompany.mavenproject2;
+
+public class Muzaki {
+    private String nama;
+    private double jumlahHarta;
+
+    // Constructor with parameters
+    public Muzaki(String nama, double jumlahHarta) {
+        this.nama = nama;
+        this.jumlahHarta = jumlahHarta;
+    }
+
+    // Getter and Setter for nama
+    public String getNama() {
+        return nama;
+    }
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    // Getter and Setter for jumlahHarta
+    public double getJumlahHarta() {
+        return jumlahHarta;
+    }
+
+    public void setJumlahHarta(double jumlahHarta) {
+        this.jumlahHarta = jumlahHarta;
+    }
+
+    // Method to calculate zakat
+    public double hitungZakat() {
+        if (jumlahHarta >= 6859394) {
+            return jumlahHarta * 0.025;
+        }
+        return 0;
+    }
+
+    // Method to check if zakat is wajib
+    public boolean isWajibZakat() {
+        return jumlahHarta >= 6859394;
+    }
+}
